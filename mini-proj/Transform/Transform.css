@@ -1,0 +1,45 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: gold;
+    transition-duration: 8s;
+    transition-delay: 3s;
+    transition-timing-function: ease-in-out;
+    transform: rotate(0deg);
+    animation: anim 10s ease-in-out 5s infinite;
+}
+div:hover{
+    transform: rotate(360deg);
+    background-color: red;
+    border-radius: 50%;
+
+}
+.hi {
+    color: black;
+}
+
+
+
+@keyframes anim {
+    0%{
+        background-color: indigo;
+        transform: rotate(0deg);
+    }
+    10% {
+        background-color: aqua;
+        transform: rotate(30deg);
+    }
+    30% {
+        background-color: rgb(230, 118, 247);
+        transform: rotate(125deg);
+
+    }
+    60% {
+        background-color: rgb(93, 85, 238);
+        transform: rotate(265deg);
+    }
+    100% {
+        background-color: rgb(249, 108, 101);
+        transform: rotate(360deg);
+    }
+}
